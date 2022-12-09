@@ -4,7 +4,8 @@
 
 /** 
  * main - prints exactly and that piece of art is useful
- * Return: 0
+ *
+ * Return: Always 0
  */
 int main(void)
 {
