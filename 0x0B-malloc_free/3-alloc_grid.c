@@ -3,7 +3,7 @@
 
 /**
  * **alloc_grid - create a two dimensional array of ints
- * @width; width of the matrix
+ * @width: width of the matrix
  * @height: height of the matrix
  *
  * Return: pointer to the created martix (success) or NULL (Error)
