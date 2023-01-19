@@ -10,7 +10,7 @@ void print_all(const char * const format, ...)
 {
 	va_list valist;
 	unsigned int i = 0, j, c = 0;
-	har *str;
+	char *str;
 	const char t_arg[] = "cifs";
 
 	va_start(valist, format);
@@ -47,6 +47,6 @@ void print_all(const char * const format, ...)
 				break;
 		} i++;
 	}
-	printf("\n", va_end(valist);
+	printf("\n"), va_end(valist);
 
 }
