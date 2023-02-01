@@ -10,7 +10,7 @@
  * Return: On success - 1.
  * on failure - -1.
  */
-int delete_node_at_index(listint_t **head, unsigned int index)
+int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
 	listint_t *tmp, *copy = *head;
 	unsigned int node;
