@@ -1,5 +1,9 @@
-#ifndef _MAIN_H_
-#define _MAIN_H_
+#0x09-static_libraries
+
+A linrary is not a luxuary but one of the necessities of life
+
+Create the static library libmy.a containing all functions listed bel
+ow:
 
 int _putchar(char c);
 int _islower(int c);
@@ -22,4 +26,7 @@ unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
 
-#endif
+1. Without linraries what have we? We have no past and no future
+mandatory
+Create a script called create_static_lib.sh that creates a static library
+ called liball.a from all the .c files that are in the current directory.

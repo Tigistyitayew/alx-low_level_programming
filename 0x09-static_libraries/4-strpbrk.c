@@ -3,19 +3,20 @@
  * _strpbrk - Entry point
  * @s: input
  * @accept: input
- * Return: Always 0 (success)
+ * Return: Always 0 (Success)
  */
-char *_Strpbrk(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
 	int k;
-	while (*S)
+
+	while (*s)
 	{
 		for (k = 0; accept[k]; k++)
 		{
-			if (*s == accept[k])
-				return (S);
+		if (*s == accept[k])
+		return (s);
 		}
-		s++;
+	s++;
 	}
 	return ('\0');
 }
