@@ -1,1 +1,1 @@
-the root of the folder of the project is mandatory
+0x0E-structures_typedef
