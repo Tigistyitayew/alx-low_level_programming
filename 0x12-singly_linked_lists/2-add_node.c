@@ -1,49 +1,33 @@
 #include "lists.h"
 
 /**
- * add_node - adds a new node at the beginning of a list
- * @head: pointer to the head of the list
- * @str: string to be added
- *
- * Return: returns the address to the new element or NULL
- * if failed
+ * add_node - adds node to beginning of a linked list
+ * @head: pointer to the first node
+ * @str: string in the node
+ * Return: address of the head
  */
 
-/**
-1. Allocate memory for a new node.
-2. If the allocation fails, return NULL.
-3. Copy the string into a new buffer.
-4. If the string copy fails, free the new node and return NULL.
-5. Compute the length of the string.
-6. Set the new node’s next pointer to point to the current head of the list.
-7. Set the head of the list to point to the new node.
-8. Return a pointer to the new node.
-*/
 list_t *add_node(list_t **head, const char *str)
 {
-	char *dup;
-	int len;
-	list_t *new;
+	list_t *newNode;
+	int n = 0;
 
-	new = malloc(sizeof(list_t));
-	if (new == NULL)
-		return (NULL);
-
-	dup = strdup(str);
-	if (dup == NULL)
+	newNode = (list_t *)malloc(sizeof(list_t));
+	if (newNode == NULL)
 	{
-		free(new);
 		return (NULL);
 	}
-	for (len = 0; str[len];)
-		len++;
 
-	new->str = dup;
-	new->len = len;
-	new->next = *head;
+	newNode->str = strdup(str);
 
-	*head = new;
+	while (str[n])
+	{
+		n++;
+	}
 
-	return (new);
+	newNode->len = n;
+	newNode->next = *head;
+	*head = newNode;
 
+	return (*head);
 }
